@@ -51,6 +51,7 @@ pdfFileName =  configDictionary.get("PdfName")
 #wb = mainExcel.createWorkBook(configDictionary.get("FileName"))
 wb=""
 try:
+    print("Changes for Git")
     cursor = conn.cursor()
     cursor.execute('EXEC dbo.uspQCProcessLogStart @PLID = ? ', 1003, )
     conn.commit()
