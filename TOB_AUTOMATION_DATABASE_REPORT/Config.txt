@@ -1,0 +1,47 @@
+[FileSection]
+ExcelPathName =TOBExcelReport.xlsx
+ChartName=TOBPB_Chart
+PdfName=TOBPB_Report.pdf
+[DataBaseSection]
+servername=botsql01.database.windows.net
+DATABASEName=pbb-tobUAT
+UserID=pbb_qa_app
+password=NiUPSR60FrvMEyIusWxl7bmAkBBcjDTOYKoXD04tH8JVch8g
+
+[MODULES TOAUTOMATE]
+Module1=Entity
+Module2=EntityFormulary
+Module3=DrugFormularyStatus
+Module4=DrugFormularyRestrictions
+Module5=AccountRollup
+Module6=ChannelRollup
+Module7=Drug
+Module8=PlanProduct
+Module9=Person
+Module10=PBMServices
+Module11=KeyContact
+Module12=IMSBridge
+Module13=Formulary
+Module14=EntityPerson
+Module15=EntityProduct
+Module16=EntityProductFormulary
+Module17=EntitySubChannel
+Module18=PredominantForCorporate
+Module19=PredominantStatusForN
+Module20=PreDominantStatusForPBM
+Module21=Test1
+NumberOfModules=22
+
+[DATA SECTION]
+Channels=Cash,Commercial,CVS FEP,Employer,MA,MA-PD,Managed Medicaid,Medicare Other,Other Third Party,PBM,PDP,SPP,State Medicaid,TRICARE,VA
+DRUGS=Aubagio,Avonex,Cimzia,Copaxone 20 mg/ml,Enbrel,Gilenya,Humira,Otezla,Tecfidera
+producttype=Self-Funded/ASO,Tricare,EPO,Medicaid,Unions,Supplemental Medicare,HMO,PPO,CHIP,Federal Employees,Medicare Other,State Medicaid,Bronze,Gold,Point of Service,PDP,Medicare Advantage,MA-PD,Platinum,Indemnity,Silver,PBM,Catastrophic
+AccountRollupExpectedSubChannel= Commercial,CVS FEP,Employer,HIX,MA,MA-PD,Managed Medicaid,PBM,PDP,SPP,State Medicaid,TRICARE,VA
+channelRollupMapping=Cash:Cash,Commercial:Commercial,Managed Medicaid:Commercial,Employer:Employer,CVS FEP:Government,TRICARE:Government,VA:Government,MA:Medicare,MA-PD:Medicare,PDP:Medicare,Medicare Other:Medicare,Other Third Party:Other Third Party,PBM:PBM,SPP:SPP,State Medicaid:State Medicaid
+DrugFormularyStatus=Commercial,CVS FEP,Employer,HIX,MA-PD,Managed Medicaid,PDP,State Medicaid,TRICARE,VA,PBM
+EntityFormulary=Commercial,CVS FEP,Employer,HIX,MA-PD,Managed Medicaid,PBM,PDP,State Medicaid,TRICARE,VA
+EntityProduct=Commercial,CVS FEP,Employer,HIX,MA,MA-PD,Managed Medicaid,PBM,PDP,SPP,State Medicaid,TRICARE,VA
+EntityProductFormulary=Commercial,CVS FEP,Employer,HIX,Managed Medicaid,MA-PD,PBM,PDP,State Medicaid,TRICARE,VA
+EntitySubChannel=Commercial,CVS FEP,Employer,HIX,MA,MA-PD,Managed Medicaid,PBM,PDP,SPP,State Medicaid,TRICARE,VA
+IMSBridge=Cash,Commercial,Employer,Managed Medicaid,MA-PD,Medicare Other,Other Third Party,PBM,PDP,State Medicaid,TRICARE,VA
+PBMServices=Commercial,CVS FEP,Employer,Managed Medicaid,MA-PD,PDP,TRICARE
